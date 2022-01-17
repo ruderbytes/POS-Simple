@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:selectableItemBackground">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fdfdfd">
+
+        <TextView
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:id="@+id/itemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vintage Logo Jacket"
+            android:gravity="center_vertical"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/itemPortion"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Half"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/itemPrice"
+                android:gravity="end"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/_12ssp"
+                android:layout_height="match_parent"
+                android:text="Rp. 65.000"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e4e4e4"/>
+</FrameLayout>

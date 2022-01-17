@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_receipt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:paddingBottom="@dimen/_14sdp"
+        android:paddingLeft="@dimen/_14sdp"
+        android:paddingRight="@dimen/_14sdp"
+        android:paddingTop="@dimen/_14sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/receiptChange"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:text="@string/no_change"
+            android:textColor="@color/purple_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/receiptOut"
+            android:gravity="center"
+            android:text="Out of Rp. 300.000"
+            android:textColor="#979797"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_14sdp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#979797"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:gravity="center"
+            android:text="How would you like to receive your receipt?"
+            android:textColor="#979797"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_14sdp"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <EditText
+                android:id="@+id/etEmail"
+                android:background="@drawable/border_edittext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:hint="@string/your_email"/>
+            <com.google.android.material.button.MaterialButton
+                app:icon="@drawable/ic_baseline_email_24"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:id="@+id/sendReceiptEmail"
+                android:background="@drawable/corner_button"
+                android:layout_width="0dp"
+                android:layout_weight="1.3"
+                android:layout_height="50dp"
+                android:text="Send by email"
+                android:textAllCaps="false"
+                android:textColor="#fff"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <EditText
+                android:id="@+id/etNumber"
+                android:background="@drawable/border_edittext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:hint="@string/your_whatsapp"/>
+            <com.google.android.material.button.MaterialButton
+                app:icon="@drawable/ic_baseline_whatsapp_24"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:id="@+id/sendReceiptWhatsapp"
+                android:background="@drawable/corner_button"
+                android:layout_width="0dp"
+                android:layout_weight="1.3"
+                android:layout_height="50dp"
+                android:text="Send by Whatsapp"
+                android:textAllCaps="false"
+                android:textColor="#fff"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+</LinearLayout>

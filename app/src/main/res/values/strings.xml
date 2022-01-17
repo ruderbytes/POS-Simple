@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Dalenta Sales</string>
+    <string name="hint_search">Search for products</string>
+    <string name="charge_total">Charge Rp. %1$s</string>
+    <string name="rp_total">Rp. %1$s</string>
+    <string name="rp_total_change">Rp. %1$s Change</string>
+    <string name="checkout_total">Checkout Rp. %1$s</string>
+    <string name="out_of">Out of Rp. %1$s</string>
+    <string name="custom_text">Custom</string>
+    <string name="text_rounded_info">Number has been rounded off</string>
+    <string name="text_choose_payment_info">Choose a payment method below</string>
+    <string name="your_email">Email</string>
+    <string name="your_whatsapp">Whatsapp Number</string>
+    <string name="custom_amount">Custom Amount</string>
+    <string name="no_change">No Changes</string>
+    <string name="option_delivery">Delivery</string>
+    <string name="option_have_here">Have Here</string>
+    <string name="payment_type_cash">Cash</string>
+    <string name="payment_type_transfer">Bank Transfer</string>
+    <string name="payment_type_debit">Debit / Credit Card</string>
+    <string name="payment_type_qris">QRIS E-Wallet</string>
+</resources>

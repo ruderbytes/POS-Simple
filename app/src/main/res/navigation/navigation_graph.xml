@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/productFragment">
+
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="id.lemonavy.dalenta.ui.product.ProductFragment"
+        android:label="Library" >
+        <action
+            android:id="@+id/action_productFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="id.lemonavy.dalenta.ui.cart.CartFragment"
+        android:label="Cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_checkoutFragment"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="id.lemonavy.dalenta.ui.checkout.CheckoutFragment"
+        android:label="Check-Out" >
+
+        <action
+            android:id="@+id/action_checkoutFragment_to_receiptFragment"
+            app:destination="@id/receiptFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/receiptFragment"
+        android:name="id.lemonavy.dalenta.ui.checkout.ReceiptFragment"
+        android:label="Receipt" >
+
+    </fragment>
+</navigation>
